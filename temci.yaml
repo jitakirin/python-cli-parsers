@@ -1,0 +1,35 @@
+- attributes: {description: argparse simple}
+  run_config:
+    cwd: .
+    run_cmd: python3 -m pcpd.argparse_demo.simple argparse
+    runner: time
+    time:
+      properties: [utime, stime, etime, avg_mem_usage, max_res_set, avg_res_set]
+- attributes: {description: argh simple}
+  run_config:
+    cwd: .
+    run_cmd: python3 -m pcpd.argh_demo.simple argh
+    runner: time
+    time:
+      properties: [utime, stime, etime, avg_mem_usage, max_res_set, avg_res_set]
+- attributes: {description: click simple}
+  run_config:
+    cwd: .
+    run_cmd: python3 -m pcpd.click_demo.simple click
+    runner: time
+    time:
+      properties: [utime, stime, etime, avg_mem_usage, max_res_set, avg_res_set]
+- attributes: {description: clize simple}
+  run_config:
+    cwd: .
+    run_cmd: python3 -m pcpd.clize_demo.simple clize
+    runner: time
+    time:
+      properties: [utime, stime, etime, avg_mem_usage, max_res_set, avg_res_set]
+- attributes: {description: defopt simple}
+  run_config:
+    cwd: .
+    run_cmd: python3 -m pcpd.defopt_demo.simple defopt
+    runner: time
+    time:
+      properties: [utime, stime, etime, avg_mem_usage, max_res_set, avg_res_set]
